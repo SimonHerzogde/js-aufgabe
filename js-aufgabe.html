@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="utf-8">
+		<title> Javascript-Aufgabe </title>
+		<link href="styles/js-aufgabe.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+			<h1>Aufgabe 1 - <em>Aktuelles Datum</em></h1>
+			<h1 id="datum"></h1>
+			<br>
+			<h1>Aufgabe 2 - <em>Bildwechsel mit Mousover</em></h1>
+
+			<div class="aufg2">
+
+				<figure>
+					<img src="images/question-box.png" alt="Gelbe Box mit Fragezeichen" width="150" id="box1" onmouseover="picChanger(this.id, 'images/blue_shell.png')">
+					<figcaption>
+						Box 1
+					</figcaption>
+				</figure>
+
+				<figure>
+					<img src="images/question-box.png" alt="Gelbe Box mit Fragezeichen" width="150" id="box2" onmouseover="picChanger(this.id, 'images/tanuki.png')">
+					<figcaption>
+						Box 2
+					</figcaption>
+				</figure>
+
+				<figure>
+					<!-- zusätzlich height, da Bild nicht quadratisch -->
+					<img src="images/question-box.png" alt="Gelbe Box mit Fragezeichen" width="150" height="150" id="box3" onmouseover="picChanger(this.id, 'images/coin.jpg')">
+					<figcaption>
+						Box 3
+					</figcaption>
+				</figure>
+
+		 </div>
+		 <br>
+
+		 <h1>Aufgabe 3 - <em>Formular</em></h1>
+
+		 <form action="" onsubmit="return formcheck()">
+			<label for="nachname">Nachname</label>
+			<input type="text" id="nachname" name="name" size="30">
+			<br>
+			<label for="email">Email</label>
+			<input type="email" id="email" name="mail" size="30">
+			<br>
+			<input type="submit" value="Absenden">
+		 </form>
+
+			<script src="scripts/js-aufgabe.js" type="text/javascript"></script>
+
+	</body>
+</html>

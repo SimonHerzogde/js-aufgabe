@@ -1,0 +1,16 @@
+/* CSS Styles für JS Aufgabe */
+
+.aufg2 {
+  /*Zum Flexcontainer machen für Anordnung nebeneinander*/
+  display: flex;
+}
+/* margin verändern, um die Bilder-Blöcke (flexitems) etwas näher aneinander zu rücken */
+figure {
+  margin: 0.5rem;
+}
+
+label {
+/* Bisschen Ordnung im Formular */
+  float: left;
+  width: 100px;
+}
